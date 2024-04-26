@@ -195,7 +195,7 @@ subscription SubscribeCandles($id: MarketId!, $width: CandleWidth!) {
   }
 }
 
-subscription FillsSubscription {
+subscription SubscribeFills {
   fills {
     dir
     fillId

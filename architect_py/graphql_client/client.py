@@ -6,7 +6,6 @@ from typing import Any, AsyncIterator, Dict, List, Optional, Union
 from .base_model import UNSET, UnsetType
 from .cancel_order import CancelOrder
 from .enums import CandleWidth
-from .fills_subscription import FillsSubscription
 from .get_all_market_snapshots import GetAllMarketSnapshots
 from .get_balances_for_cpty import GetBalancesForCpty
 from .get_fills import GetFills
@@ -23,6 +22,7 @@ from .send_order import SendOrder
 from .subscribe_book import SubscribeBook
 from .subscribe_candles import SubscribeCandles
 from .subscribe_exchange_specific import SubscribeExchangeSpecific
+from .subscribe_fills import SubscribeFills
 from .subscribe_trades import SubscribeTrades
 
 
@@ -713,12 +713,10 @@ class GraphQLClient(JuniperAsyncBaseClient):
         ):
             yield SubscribeCandles.model_validate(data)
 
-    async def fills_subscription(
-        self, **kwargs: Any
-    ) -> AsyncIterator[FillsSubscription]:
+    async def subscribe_fills(self, **kwargs: Any) -> AsyncIterator[SubscribeFills]:
         query = gql(
             """
-            subscription FillsSubscription {
+            subscription SubscribeFills {
               fills {
                 dir
                 fillId
@@ -781,12 +779,9 @@ class GraphQLClient(JuniperAsyncBaseClient):
         )
         variables: Dict[str, object] = {}
         async for data in self.execute_ws(
-            query=query,
-            operation_name="FillsSubscription",
-            variables=variables,
-            **kwargs
+            query=query, operation_name="SubscribeFills", variables=variables, **kwargs
         ):
-            yield FillsSubscription.model_validate(data)
+            yield SubscribeFills.model_validate(data)
 
     async def subscribe_book(
         self, id: Any, precision: Union[Optional[Any], UnsetType] = UNSET, **kwargs: Any

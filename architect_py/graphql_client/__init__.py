@@ -17,11 +17,6 @@ from .enums import (
     Reason,
     ReferencePrice,
 )
-from .fills_subscription import (
-    FillsSubscription,
-    FillsSubscriptionFills,
-    FillsSubscriptionFillsMarket,
-)
 from .fragments import (
     CandleFields,
     MarketFields,
@@ -88,6 +83,11 @@ from .subscribe_exchange_specific import (
     SubscribeExchangeSpecificExchangeSpecific,
     SubscribeExchangeSpecificExchangeSpecificMarket,
 )
+from .subscribe_fills import (
+    SubscribeFills,
+    SubscribeFillsFills,
+    SubscribeFillsFillsMarket,
+)
 from .subscribe_trades import SubscribeTrades, SubscribeTradesTrades
 
 __all__ = [
@@ -108,9 +108,6 @@ __all__ = [
     "CreateTimeInForceInstruction",
     "CreateTwapAlgo",
     "FillKind",
-    "FillsSubscription",
-    "FillsSubscriptionFills",
-    "FillsSubscriptionFillsMarket",
     "GetAllMarketSnapshots",
     "GetAllMarketSnapshotsMarketsSnapshots",
     "GetBalancesForCpty",
@@ -168,6 +165,9 @@ __all__ = [
     "SubscribeExchangeSpecific",
     "SubscribeExchangeSpecificExchangeSpecific",
     "SubscribeExchangeSpecificExchangeSpecificMarket",
+    "SubscribeFills",
+    "SubscribeFillsFills",
+    "SubscribeFillsFillsMarket",
     "SubscribeTrades",
     "SubscribeTradesTrades",
     "UpdateMarket",
