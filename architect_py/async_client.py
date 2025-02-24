@@ -547,6 +547,7 @@ P4NC7VHNfGr8p4Zk29eaRBJy78sqSzkrQpiO4RxMf5r8XTmhjwEjlo0KYjU=
     async def send_limit_order(
         self,
         *,
+        order_id: Optional[UUID] = None,
         market: str,
         odir: OrderDir,
         quantity: Decimal,

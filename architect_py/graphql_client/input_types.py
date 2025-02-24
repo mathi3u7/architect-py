@@ -38,6 +38,7 @@ class CreateMMAlgo(BaseModel):
 
 
 class CreateOrder(BaseModel):
+    order_id: Optional[str] = Field(alias="orderId", default=None)
     market: str
     dir: Annotated[OrderDir, PlainSerializer(serialize)]
     quantity: Decimal
@@ -140,7 +141,3 @@ class MarketFilter(BaseModel):
 class UpdateMarket(BaseModel):
     market_id: str = Field(alias="marketId")
     is_favorite: bool = Field(alias="isFavorite")
-
-
-CreateOrder.model_rebuild()
-CreateSpreadAlgo.model_rebuild()
