@@ -582,6 +582,7 @@ P4NC7VHNfGr8p4Zk29eaRBJy78sqSzkrQpiO4RxMf5r8XTmhjwEjlo0KYjU=
 
         order: str = await self.send_order(
             CreateOrder(
+                orderId=order_id,
                 market=market,
                 dir=odir,
                 quantity=quantity,
