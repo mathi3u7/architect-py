@@ -239,7 +239,7 @@ P4NC7VHNfGr8p4Zk29eaRBJy78sqSzkrQpiO4RxMf5r8XTmhjwEjlo0KYjU=
         self.market_names_by_route: dict[str, dict[str, dict[str, dict[str, str]]]] = {}
         self.l2_books: dict[str, L2Book] = {}
 
-    async def grpc_channel(self, endpoint: str):
+    async def grpc_channel(self, endpoint: str, *, use_system_default_root_certificates: bool = False):
         if "://" not in endpoint:
             endpoint = f"http://{endpoint}"
         url = urlparse(endpoint)
@@ -251,10 +251,13 @@ P4NC7VHNfGr8p4Zk29eaRBJy78sqSzkrQpiO4RxMf5r8XTmhjwEjlo0KYjU=
             raise Exception(f"No SRV records found for {url.hostname}")
         connect_str = f"{srv_records[0].target}:{srv_records[0].port}"
         if is_https:
-            credentials = grpc.ssl_channel_credentials(
-                root_certificates=self.grpc_root_certificates
-            )
-            options = (("grpc.ssl_target_name_override", "service.architect.xyz"),)
+            credentials = grpc.ssl_channel_credentials()
+            options = None
+            if not use_system_default_root_certificates:
+                credentials = grpc.ssl_channel_credentials(
+                    root_certificates=self.grpc_root_certificates
+                )
+                options = (("grpc.ssl_target_name_override", "service.architect.xyz"),)
             return grpc.aio.secure_channel(connect_str, credentials, options=options)
         else:
             return grpc.aio.insecure_channel(connect_str)
@@ -429,11 +432,15 @@ P4NC7VHNfGr8p4Zk29eaRBJy78sqSzkrQpiO4RxMf5r8XTmhjwEjlo0KYjU=
         return list(by_quote.values())
 
     async def subscribe_l1_book_snapshots(
-        self, endpoint: str, market_ids: list[str] | None = None
+        self, endpoint: str, market_ids: list[str] | None = None, symbols: list[str] | None = None,
+        *, use_system_default_root_certificates: bool = False
     ) -> AsyncIterator[L1BookSnapshot]:
-        channel = await self.grpc_channel(endpoint)
+        channel = await self.grpc_channel(
+            endpoint, 
+            use_system_default_root_certificates=use_system_default_root_certificates
+        )
         stub = JsonMarketdataStub(channel)
-        req = SubscribeL1BookSnapshotsRequest(market_ids=market_ids)
+        req = SubscribeL1BookSnapshotsRequest(market_ids=market_ids, symbols=symbols)
         return stub.SubscribeL1BookSnapshots(req)
 
     async def l2_book_snapshot(self, endpoint: str, market_id: str) -> L2BookSnapshot:

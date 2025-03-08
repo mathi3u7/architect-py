@@ -39,10 +39,12 @@ class JsonMarketdataStub:
 
 class SubscribeL1BookSnapshotsRequest(msgspec.Struct, kw_only=True):
     market_ids: list[str] | None
+    symbols: list[str] | None
 
 
 class L1BookSnapshot(msgspec.Struct, kw_only=True):
-    market_id: UUID = msgspec.field(name="m")
+    symbol: Optional[str] = msgspec.field(name="s", default=None)
+    market_id: Optional[UUID] = msgspec.field(name="m", default=None)
     timestamp_s: int = msgspec.field(name="ts")
     timestamp_ns: int = msgspec.field(name="tn")
     epoch: int | None = msgspec.field(name="e", default=None)
