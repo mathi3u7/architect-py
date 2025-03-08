@@ -75,7 +75,7 @@ from .protocol.marketdata import (
     SubscribeL1BookSnapshotsRequest,
     SubscribeL2BookUpdatesRequest,
 )
-from .protocol.symbology import Market, Product, Route, Venue
+from .protocol.symbology import JsonSymbologyStub, Market, Product, Route, Venue
 
 from .utils.price_bands import price_band_pairs
 
@@ -430,6 +430,14 @@ P4NC7VHNfGr8p4Zk29eaRBJy78sqSzkrQpiO4RxMf5r8XTmhjwEjlo0KYjU=
             return []
         by_quote = by_base.get(base, {})
         return list(by_quote.values())
+    
+    async def symbols(self, endpoint: str) -> list[str]:
+        channel = await self.grpc_channel(
+            endpoint,
+            use_system_default_root_certificates=True,
+        )
+        stub = JsonSymbologyStub(channel)
+        return await stub.Symbols({})
 
     async def subscribe_l1_book_snapshots(
         self, endpoint: str, market_ids: list[str] | None = None, symbols: list[str] | None = None,

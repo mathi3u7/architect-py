@@ -2,9 +2,27 @@ import uuid
 from dataclasses import dataclass, field
 from datetime import datetime
 from decimal import Decimal
-from typing import Any, Literal, Optional
+from typing import Any, Literal, Optional, Union
 
 from .utils import valid_decimal, valid_uuid
+
+import grpc
+import msgspec
+
+
+class JsonSymbologyStub:
+    def __init__(self, channel: Union[grpc.Channel, grpc.aio.Channel]):
+        self.Symbols = channel.unary_unary(
+            "/json.architect.Symbology/Symbols",
+            request_serializer=msgspec.json.encode,
+            response_deserializer=lambda buf: msgspec.json.decode(
+                buf, type=SymbolsResponse
+            ),
+        )
+
+
+class SymbolsResponse(msgspec.Struct, kw_only=True):
+    symbols: list[str] = msgspec.field(default=None)
 
 
 @dataclass(kw_only=True)
