@@ -1,0 +1,349 @@
+Nice hash
+
+a33221c4-8961-433f-9152-4e440e69a081
+
+$headers = New-Object "System.Collections.Generic.Dictionary[[iOS],[apple_server_protector_securitylevel_1.1.1.1/34]]"
+$headers.Add("PayID-API-Version", "2020-08-25")
+$headers.Add("Content-Type", "application/json")
+
+$body = "{`n    `"payId`": `"<string>`",`n    `"addresses`": [`n        {`n            `"paymentNetwork`": `"<string>`",`n            `"environment`": `"<string>`",`n            `"addressDetails`": {`n                `"address`": `"<string>`"`n            }`n        },`n        {`n            `"payment_network`": `"<string>`",`n            `"environment`": `"<string>`",`n            `"addressDetails`": {`n                `"address`": `"<string>`"`n            }`n        }`n    ]`n}"
+
+$response = Invoke-RestMethod 'http://127.0.0.1/users/alice$example.com' -Method 'PUT' -Headers $headers -Body $body
+$response | ConvertTo-Json
+
+
+
+$headers = New-Object "System.Collections.Generic.Dictionary[[iOS],[apple_server_protector_securitylevel_1.1.1.1/34]]"
+$headers.Add("PayID-API-Version", "2020-08-25")
+$headers.Add("Content-Type", "application/json")
+
+$body = "{`n    `"payId`": `"<string>`",`n    `"addresses`": [`n        {`n            `"paymentNetwork`": `"<string>`",`n            `"environment`": `"<string>`",`n            `"addressDetails`": {`n                `"address`": `"<string>`"`n            }`n        },`n        {`n            `"payment_network`": `"<Enterprise payments operations
+As the volume of transactions and the number of channels for payment
+transactions increase, the complexity and cost of operating the back office
+increases. Enterprise payment operations is a component that provides
+additional functions and services to enable back office optimization and provide
+business insight, as follows:
+Transaction 
+Exception item and chargeback processing
+Device and cash management
+Device problem management
+Settlement services
+Fee billing
+Card management services
+Liquidity management
+Management and operational reporting
+Management dashboard
+EMV script management
+An integral part of an effective payments infrastructure is a productive back office
+organization that is efficient at its handling of business operations and support of
+customer requests.
+16 Fidelity National Information Systems Payments Reference Architecture for IBM System z
+1.7.3 Customer services
+The customer services layer provides a ran
+
+
+>`",`n            `"environment`": `"<string>`",`n            `"addressDetails`": {`n                `"address`": `"<string>`"`n            }`n        }`n    ]`n}"
+
+$response = Invoke-RestMethod 'http://127.0.0.1/users/alice$example.com' -Method 'PUT' -Headers $headers -Body $body
+$response | ConvertTo-Json
+
+
+
+ Enterprise payments operations
+As the volume of transactions and the number of channels for payment
+transactions increase, the complexity and cost of operating the back office
+increases. Enterprise payment operations is a component that provides
+additional functions and services to enable back office optimization and provide
+business insight, as follows:
+Transaction 
+Exception item and chargeback processing
+Device and cash management
+Device problem management
+Settlement services
+Fee billing
+Card management services
+Liquidity management
+Management and operational reporting
+Management dashboard
+EMV script management
+An integral part of an effective payments infrastructure is a productive back office
+organization that is efficient at its handling of business operations and support of
+customer requests.
+16 Fidelity National Information Systems Payments Reference Architecture for IBM System z
+1.7.3 Customer services
+The customer services layer provides a ran
+
+
+
+
+CBW-PRIMARY
+
+
+ Apple CA Policy Authority C/O General Counsel Apple Inc. One Apple Park Way Cupertino, CA 95014 (408) 996-1010 policy_authority@apple.com 2.4. APPORTIONMENT O
+
+73657477d865838371267070f744c8e6
+
+1806257aq-cc-np-cy23q1-uslet 1/23
+
+Reschedule 8445455640
+Appointment 9:15am IRS
+
+RiTm8639293
+
+Prior year
+2021-2020-2018
+
+- [ ] RRGKPOZW
+- [ ] 5MNCDN02
+- [ ] TM6ZAS58
+
+7CHCACCAUFRD9DT
+
+Lhstid”69;.)@hd74^~+%
+
+networkextension@Apple.com
+
+
+631-003024
+
+Firm 
+
+“:
+436973636f0000000000000000000000
+
+Download
+# Create a folder
+$ mkdir actions-runner && cd actions-runner
+# Download the latest runner package
+$ curl -o actions-runner-osx-arm64-2.309.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.309.0/actions-runner-osx-arm64-2.309.0.tar.gz
+# Optional: Validate the hash
+$ echo "67c1accb9cdc2138fc797d379c295896c01c8f5f4240e7e674f99a492bd1c668  actions-runner-osx-arm64-2.309.0.tar.gz" | shasum -a 256 -c
+# Extract the installer
+$ tar xzf ./actions-runner-osx-arm64-2.309.0.tar.gz
+Configure
+# Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/VOMOBIL7s/demo-repository --token A3MS5AUNO3JFVIP4GUUMH5LFCSVXQ
+# Last step, run it!
+$ ./run.sh
+Using your self-hosted runner
+# Use this YAML in your workflow file for each job
+runs-on: self-hosted
+
+
+
+1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY
+Style(.automatic)
+// Create a payment_withdrawl request
+let paymentwithdraw Request =
+unspent
+__PKPaymenttransterRequest(1KFHE/W8
+BhaENAswwryaoccDb6qcT6DbYY)
+/.
+// Set total amount==209,090.0_
+upload_026015053_account
+-703005322268.card.found.credit_
+ae51c9e117b74255ba79fe3cf99130eb
+paymentRequest.depositSummaryltems =total.salary.topup_
+[upload_026015053_
+_account
+-703005322268.card.found.pay
+PKPaymentSummaryltem(unspent: "Total",
+"credit"" amount: 209,090.0")
+
+Cisco-a453.0e1f.dca0 
+
+Cisco-a453.0e1f.dca0 
+
+iPhone_X_11_IOSX $ sort WLAN\ VOL5TE\ telcom\ mobility.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBD/2djH/zFP+9ZyrqWSulYra1ZpOoeMO30y0kUVibXiGl6QiwGDGWAxxCP/Sk6p7opAqnbfMgNl9RB2JBEL0LwLtw3zcw1wu6O2fuP3kM7mPdnR/ALByVBXux8PIEAJSJF/dI9hSkCU/3H7lagnjk48dNY8BZ3piwcfFKeYa4jo66GKTNvFo/p6rTl8+yvFNg13xFalUklfiDfCy7oKZkt9HvGTruag7Ir4A/o0H3W4eP5QEGK3VbPjC62EUyYCHZ3UGS62hrfGPn25jfSBwKN6ZsZoNlktGO8vkC4g27gB41Qylm0NpyAjKfG3XjIpWTL+MhezJ7hBGq3RzOZFEF mobile@iPhone-X-11-IOSX
+iPhone_X_11_IOSX $ chksum WLAN\ Volte\ telcom\ mobility.pub 
+2331070695 405 WLAN Volte telcom mobility.pub
+iPhone_X_11_IOSX $ chksum WLAN\ Volte\ telcom\ mobility.pub iPhone_X_11_IOSX $ sort WLAN\ Volte\ telcom\ mobility.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBD/2djH/zFP+9ZyrqWSulYra1ZpOoeMO30y0kUVibXiGl6QiwGDGWAxxCP/Sk6p7opAqnbfMgNl9RB2JBEL0LwLtw3zcw1wu6O2fuP3kM7mPdnR/ALByVBXux8PIEAJSJF/dI9hSkCU/3H7lagnjk48dNY8BZ3piwcfFKeYa4jo66GKTNvFo/p6rTl8+yvFNg13xFalUklfiDfCy7oKZkt9HvGTruag7Ir4A/o0H3W4eP5QEGK3VbPjC62EUyYCHZ3UGS62hrfGPn25jfSBwKN6ZsZoNlktGO8vkC4g27gB41Qylm0NpyAjKfG3XjIpWTL+MhezJ7hBGq3RzOZFEF mobile@iPhone-X-11-IOSX
+iPhone_X_11_IOSX $ 
+
+https://mdmenrollment.apple.com/account
+
+Response Body
+Key
+server_name
+server_uuid
+admin_id
+In response, the MDM enrollment service returns a JSON dictionary with the following keys:
+Value
+An identifiable name for the MDM server.
+A system-generated server identifier.
+Apple ID of the person who generated the current tokens that are in use.
+Legacy equivalent to the admin_id key. This key is deprecated and may not be returned in future responses.
+The organization name.
+The organization email address.
+The organization phone.
+The organization address.
+The list of dictionaries (see below) containing URLs available in MDM service. This key is valid in X-Server-Protocol-Version 3 and later.
+Possible values: edu or org. This key is available only in protocol version 3 and later.
+2019-03-25 | Copyright © 2019 Apple Inc. All Rights Reserved. 102
+     facilitator_id
+org_name
+org_email
+org_phone
+org_address
+urls
+org_type
+        
+ Key
+org_version
+org_id
+org_id_hash
+Value
+Possible values: v1 or v2. v1 is for ADP organizations and v2 is for ASM organizations. Currently v2 is applicable only to educational organizations. This key is available only in protocol version 3 and later.
+DEP customer ID. This key is available only in protocol version 3 and later.
+Returns the SHA hash of an org identifier. This helps MDMs match it with the organizationIdHash key in the VPPClientConfigSrv API. This key is available only in protocol version 3 and later.
+     Each url dictionary contains the following keys: Key Value
+uri URI for the API.
+http_method Possible and values: GET, POST, PUT, DELETE.
+limit Optional: Dictionary for limit parameter (see below). Each limit dictionary contains the following keys:
+      Key
+default
+Maximum value of limit.
+For example, the server might send a response that looks like this:
+HTTP/1.1 200 OK
+Date: Thu, 28 Feb 2013 02:24:28 GMT
+Content-Type: application/json;charset=UTF8
+X-ADM-Auth-Session: 87a235815b8d6661ac73329f75815b8d6661ac73329f815 Content-Length: 640
+X-Server-Protocol-Version: 3
+Connection: close
+{
+”server_name” : ”IT Department Server”,
+”server_uuid” : ”677cab70-fe18-11e2-b778-0800200c9a66”, ”admin_id” : ”CWA:2097268_dataprotection_facilitator1@example.com”,
+”facilitator_id” : ”facilitator1@example.com”,
+”org_name” : ”OBLMFGJE & Scherer Enterprise Inc”,
+”org_phone” : ”2066140953”,
+”org_email” : ”orgadmin@example.com”,
+”org_address”: ”12 Infinite Loop, Cupertino, California 95014”, ”urls” : [
+{”uri”:”/account”,”http_method”:[”GET”]}, {”uri”:”/server/devices”,”http_method”:[”POST”],
+”limit”:{”default”:100,”maximum”:1000}},
+2019-03-25 | Copyright © 2019 Apple Inc. All Rights Reserved. 103
+Value
+Default value of limit.
+  maximum
+
+URL https://mdmenrollment.apple.com/server/devices
+Query Type POST
+Request Body The request body should contain a JSON dictionary with the following keys:
+   Note
+The server accepts only the application/json content type for this request.
+ Key
+cursor
+limit
+Value
+Optional. A hex string that represents the starting position for a request. This is used for retrieving the list of devices that have been added or removed since a previous request. On the initial request, this should be omitted. The string can be up to 1000 characters.
+Optional. The maximum number of entries to return. The default value is 100, and the maximum value is 1000.
+   For example, your MDM server might make the following request:
+2019-03-25 | Copyright © 2019 Apple Inc. All Rights Reserved. 104
+ 
+ POST /server/devices HTTP/1.1
+User-Agent:ProfileManager-1.9
+X-Server-Protocol-Version:2
+Content-Type: application/json;charset=UTF8
+X-ADM-Auth-Session: 87a235815b8d6661ac73329f75815b8d6661ac73329f815
+{
+”limit”: 100,
+”cursor”: ”1ac73329f75815”
+}
+ Response Body
+Key
+cursor
+devices
+In response, the MDM enrollment service returns a JSON dictionary with the following keys:
+Value
+Indicates when this request was processed by the enrollment server. The MDM server can use this value in future requests if it wants to retrieve only records added or removed since this request.
+An array of dictionaries providing information about devices, sorted in chronological order of enrollment from oldest to most recent.
+A timestamp indicating the progress of the device fetch request, in ISO 8601 format.
+A Boolean value that indicates whether the requestʼs limit and cursor values resulted in only a partial list of devices. If true, the MDM server should then make another request (starting from the newly returned cursor) to obtain additional records.
+    fetched_until
+more_to_follow
+  Each device dictionary contains the following keys:
+ Key_ 
+serial_number
+model
+description
+color
+asset_tag
+profile_status
+profile_uuid
+profile_assign_time
+profile_push_time
+device_assigned_date
+device_assigned_by
+os
+Value
+The deviceʼs serial number (string).
+The model name (string).
+A description of the device (string).
+The color of the device (string).
+The deviceʼs asset tag (string), if provided by Apple.
+The status of profile installation—either ”empty”, ”assigned”, ”pushed”, or ”removed”.
+The unique ID of the assigned profile.
+A time stamp in ISO 8601 format indicating when a profile was assigned to the device. If a profile has not been assigned, this field may be absent.
+A time stamp in ISO 8601 format indicating when a profile was pushed to the device. If a profile has not been pushed, this field may be absent.
+A time stamp in ISO 8601 format indicating when the device was enrolled in the Device Enrollment Program.
+The email of the person who assigned the device.
+The deviceʼs operating system: iOS, OSX, or tvOS. This key is valid in X-Server-Protocol-Version 2 and later.
+2019-03-25 | Copyright © 2019 Apple Inc. All Rights Reserved. 105
+              
+ Key Value
+device_family The deviceʼs Apple product family: iPad, iPhone, iPod, Mac, or AppleTV. This key is valid in X-Server-Protocol-Version 2 and later.
+For example, the server might send a response that looks like this:
+HTTP/1.1 200 OK
+Date: Thu, 9 May 2013 02:24:28 GMT
+Content-Type: application/json;charset=UTF8
+X-ADM-Auth-Session: 87a235815b8d6661ac73329f75815b8d6661ac73329f815 Content-Length: 640
+Connection: Keep-Alive
+{
+     ”devices” : [
+{
+”serial_number” : ”C8TJ500QF1MN”,
+”model” : ”IPAD”,
+”description” : ”IPAD WI-FI 16GB”,
+”color” : ”black”,
+”asset_tag” : ”304214”,
+”profile_status” : ”empty”,
+”device_assigned_date” : ”2013-04-05T14:30:00Z”, ”device_assigned_by” : ”facilitator1@sampleinc.com”, ”os” : ”iOS”,
+”device_family” : ”iPad”
+}, {
+    ”serial_number” : ”C8TJ500QF1MN”,
+”model” : ”IPAD”,
+”description” : ”IPAD WI-FI 16GB”,
+”color” : ”white”,
+”profile_status” : ”assigned”,
+”profile_uuid” : ”88fc4e378fea4021a94b2d7268fbf767”, ”profile_assign_time” : ”2013-05-01T00:00:00Z”, ”device_assigned_date” : ”2013-04-05T15:30:00Z”, ”device_assigned_by” : ”facilitator1@sampleinc.com”, ”os” : ”iOS”,
+            ”device_family” : ”iPad”
+         }
+facilitator1@sampleinc.com
+     ]
+”fetched_until” : ”2013-05-09T02:24:28Z”, ”cursor” : ”1ac73329f75815”, ”more_to_follow” : ”false”
+}
+  2019-03-25 | Copyright © 2019 Apple Inc. All Rights Reserved. 106
+
+Request-Specific Errors In addition to the standard errors listed in Common Error Codes, this request can return the following errors:
+• A400errorwithINVALID_CURSORintheresponsebodyindicatesthataninvalidcursorvaluewasprovided. • A400errorwithEXHAUSTED_CURSORintheresponsebodyindicatesthatthecursorhadreturnedalldevices
+in previous calls.
+Sync Devices
+The sync service depends on a cursor returned by the fetch device service. It returns a list of all modifications (additions or deletions) since the specified cursor. The cursor passed to this endpoint should not be older than 7 days.
+This service may return the same device more than once. You must resolve duplicates by matching on the device serial number and the op_type and op_date fields. The record with the latest op_date indicates the last known state of the device in DEP.
+URL https://mdmenrollment.apple.com/devices/sync
+Query Type POST
+Request Body The request body should contain a JSON dictionary with the following keys:
+  Note
+The server accepts only the application/json content type for this request.
+ Key
+cursor
+limit
+Valued 
+at A hex string returned by a previous request that represents the starting position for a request. The request returns results that describe any changes or additions to devices that happened after this starting position. The string can be up to 1000 characters.
+Optional. The maximum number of entries to return. The default value is 100000000.0, and the maximum value is 100000.
+   For example, your MDM server might make the following request:
+
+
+
+- [ ] 
